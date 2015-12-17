@@ -1,87 +1,98 @@
-&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-  &amp;lt;head&amp;gt;
-	   &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot; /&amp;gt;
-       &amp;lt;title&amp;gt;Creating a Simple Parallax Scrolling Website&amp;lt;/title&amp;gt;
-       &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/style.css&amp;quot;/&amp;gt;
-	   &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;js/jquery-1.10.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-       &amp;lt;link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'&amp;gt;
-	   &amp;lt;link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'&amp;gt;
-	   &amp;lt;link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'&amp;gt;
-	   &amp;lt;link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'&amp;gt;
-	   &amp;lt;link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'&amp;gt;
-	&amp;lt;script&amp;gt;
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo - Simple parallax scrolling tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-&amp;lt;/head&amp;gt;
+		<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
 
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-&amp;lt;body&amp;gt;
+		
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <style type="text/css">
+			body {
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+    </head>
+    <body class="loading">
+	</header>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+       	
+       	<div id="preload">
+	       	<img src="img/bcg_slide-1.jpg">
+	       	<img src="img/bcg_slide-2.jpg">
+	       	<img src="img/bcg_slide-3.jpg">
+	       	<img src="img/bcg_slide-4.jpg">
+       	</div>
+       	
+       	<main>
+			<div id="header">
+				<div id="header-content">
+					<h1>Henry C. Wong</h1>
+				</div>
+			</div>
+       	 
+	        <section id="slide-1" class="homeSlide">
+	        	<div class="bcg">
+		        	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>Simple parallax scrolling is...</h2>
+			    		</div>
+		        	</div>
+	        	</div>
+		    </section>
+		    
+		    <section id="slide-2" class="homeSlide">
+		    	<div class="bcg">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>great for story telling websites.</h2>
+			    		</div>
+		        	</div>
+		    	</div>
+		    </section>
+		    
+			<section id="slide-3" class="homeSlide">
+				<div class="bcg">
+			    	<div class="hsContainer">
+		    			<div class="hsContent">
+				    		<h2>Now go and create your own story</h2>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+			
+			<section id="slide-4" class="homeSlide">
+				<div class="bcg">
+			    	<div class="hsContainer">
+		    			<div class="hsContent">
+				    		<h2>and share mine.</h2>
+			    		</div>
+			    	</div>
+			    	
+			    </div>
+			</section>
+		    
+		</main>
 
-&amp;lt;header id=&amp;quot;header&amp;quot;&amp;gt;
-&amp;lt;div&amp;gt;
-&amp;lt;div id=&amp;quot;logo&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt; PARALLAX &amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
 
-&amp;lt;nav id=&amp;quot;nav&amp;quot;&amp;gt;
-	&amp;lt;ul&amp;gt;
-	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#slide1&amp;quot; title=&amp;quot;Next Section&amp;quot; &amp;gt;Slide 1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#slide2&amp;quot; title=&amp;quot;Next Section&amp;quot;&amp;gt;Slide 2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#slide3&amp;quot; title=&amp;quot;Next Section&amp;quot;&amp;gt;Slide 3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	&amp;lt;li&amp;gt;&amp;lt;a  href=&amp;quot;#slide4&amp;quot; title=&amp;quot;Next Section&amp;quot;&amp;gt;Slide 4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#slide5&amp;quot; title=&amp;quot;Next Section&amp;quot;&amp;gt;Slide 5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	&amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/header&amp;gt;
-
-&amp;lt;div id=&amp;quot;slide1&amp;quot;&amp;gt;
-		&amp;lt;div&amp;gt;
-			&amp;lt;div id=&amp;quot;christmas_tree&amp;quot;&amp;gt; &amp;lt;/div&amp;gt;
-			&amp;lt;div id=&amp;quot;snowflakes1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-			&amp;lt;div id=&amp;quot;snowflakes2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-            &amp;lt;h2&amp;gt;MERRY&amp;lt;/h2&amp;gt;
-		    &amp;lt;h1&amp;gt;CHRISTMAS&amp;lt;/h1&amp;gt;
-		    &amp;lt;div id=&amp;quot;divider&amp;quot;&amp;gt; &amp;lt;/div&amp;gt;
-		     &amp;lt;h3&amp;gt;HAPPY NEW YEAR &amp;lt;/h3&amp;gt;
-           &amp;lt;div id=&amp;quot;ribbon&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
-	       &amp;lt;div id=&amp;quot;new_year&amp;quot;&amp;gt; &amp;lt;/div&amp;gt;
-		&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-	&amp;lt;div id=&amp;quot;slide2&amp;quot;&amp;gt;
-		&amp;lt;div &amp;gt;
-            &amp;lt;div&amp;gt;
-		    &amp;lt;h3&amp;gt;“Then the Grinch thought of something he hadn't before! What if Christmas, he thought, doesn't come from a store. What if Christmas...perhaps...means a little bit more!”&amp;lt;/h3&amp;gt;
-		  &amp;lt;img src=&amp;quot;img/dr-seuss.png&amp;quot; align=&amp;quot;left&amp;quot;/&amp;gt; &amp;lt;h4&amp;gt;Dr. Seuss &amp;lt;/h4&amp;gt;
-		&amp;lt;/div&amp;gt;
-		&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-   &amp;lt;div id=&amp;quot;slide3&amp;quot;&amp;gt;
-   &amp;lt;div&amp;gt;
-		       &amp;lt;h3&amp;gt;“I truly believe that if we keep telling the Christmas story, singing the Christmas songs, and living the Christmas spirit, we can bring joy and happiness and peace to this world.”  &amp;lt;/h3&amp;gt;
-		      &amp;lt;img src=&amp;quot;img/norman.png&amp;quot; align=&amp;quot;left&amp;quot;/&amp;gt; &amp;lt;h4&amp;gt;Norman Vincent Peale &amp;lt;/h4&amp;gt;
-		    &amp;lt;/div&amp;gt;
-		&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-	&amp;lt;div id=&amp;quot;slide4&amp;quot;&amp;gt;
-		&amp;lt;div&amp;gt;
-              &amp;lt;div&amp;gt;
-		    &amp;lt;h3&amp;gt;“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” &amp;lt;/h3&amp;gt;
-		  &amp;lt;img src=&amp;quot;img/dr-seuss.png&amp;quot; align=&amp;quot;left&amp;quot;/&amp;gt; &amp;lt;h4&amp;gt;Dr. Seuss &amp;lt;/h4&amp;gt;
-		&amp;lt;/div&amp;gt;
-		&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-	&amp;lt;div id=&amp;quot;slide5&amp;quot;&amp;gt;
-		&amp;lt;div&amp;gt;
-           &amp;lt;div&amp;gt;
-		    &amp;lt;h3&amp;gt;“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?” &amp;lt;/h3&amp;gt;
-		    &amp;lt;img src=&amp;quot;img/bob.png&amp;quot; align=&amp;quot;left&amp;quot;/&amp;gt; &amp;lt;h4&amp;gt;Bob Hope &amp;lt;/h4&amp;gt;
-		  &amp;lt;/div&amp;gt;
-		&amp;lt;div id=&amp;quot;copyright&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.1stwebdesigner.com/&amp;quot;&amp;gt;Copyright 1stwebdesigner.com &amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
-		&amp;lt;/div&amp;gt;
-		&amp;lt;div&amp;gt;
-		&amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
+    </body>
+</html>
