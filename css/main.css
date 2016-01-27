@@ -142,6 +142,9 @@ body {
 h2 {
 	margin-top: 0;
 }
+h3{
+  color: #003399;
+}
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
@@ -210,13 +213,14 @@ main {
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
 #slide-1 .hsContent {
 	bottom: 200px;
+	
 	top: auto;
 }
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
 #slide-2 .hsContent {
-	margin-left: -450px;
+	margin-left: -600px;
 	bottom: 200px;
 	top: auto;
 }
@@ -376,6 +380,7 @@ main {
     a,
     a:visited {
         text-decoration: underline;
+		color: #33cccc;
     }
 
     a[href]:after {
