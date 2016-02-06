@@ -29,9 +29,11 @@ button,
 input,
 select,
 textarea {
-    color: #28c7cc;
+    color: #dfd5cb;
 }
-
+a {
+ color: inherit;
+}
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -59,12 +61,6 @@ background-color: black;
 }
 
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -75,9 +71,6 @@ background-color: black;
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 
 hr {
     display: block;
@@ -88,17 +81,13 @@ hr {
     padding: 0;
 }
 
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
+
 
 img {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
+
 
 fieldset {
     border: 0;
@@ -143,7 +132,10 @@ h2 {
 	margin-top: 0;
 }
 h3{
-  color: #003399;
+  color: #000000;
+}
+h4{
+  color: #000;
 }
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
@@ -202,10 +194,10 @@ main {
 	}
 	.hsContent p {
 		width: 400px;
-		color: #b2b2b2;
+		color: #1a1515;
 	}
 	.hsContent a {
-		color: #b2b2b2;
+		color: #1a1515;
 		text-decoration: underline;
 	}
 
@@ -218,17 +210,18 @@ main {
 }
 
 /* Slide 2 */
+
 #slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
 #slide-2 .hsContent {
 	margin-left: -600px;
-	bottom: 200px;
-	top: auto;
+	top: 100px;
+	/* top: auto; */
 }
 
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
 #slide-3 .hsContent {
-	margin-left: -239px;
+	margin-left: -500px;
 }
 	#slide-3 h2 {
 		color: #f2ead6;
